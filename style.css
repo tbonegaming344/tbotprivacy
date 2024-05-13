@@ -1,0 +1,375 @@
+html{
+  scroll-behavior: smooth; 
+}
+p.dashed {border-style: dashed;}
+  p {
+  border-bottom: 10px solid blue;
+  border-top: 10px solid #28FFBF;
+  color: yellow;
+  background-color: orange;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  margin: auto;
+  }
+  body{
+    background-color:gray;
+    }
+  img{
+    float: left;
+    border: 10px solid #F6CE4B;
+    border-top: 10px solid #DE413C; 
+    border-bottom: 10px solid #EB7941;
+      max-width: 100%;
+  height: auto;
+}
+img:hover{
+  border: 10px solid #EB92BE;
+  border-top: 10px solid #FFEF78;
+  border-bottom: 10px solid #A8E7E9;
+  box-shadow: 10px 10px #00EAD3;
+}
+  h1{
+    color: #0F1D6D;
+  }
+  h1:hover{
+    color: #FBFF00;
+    text-shadow: 6px 0px  #7C83FD;
+  }
+html::-webkit-scrollbar{
+  width: 40px;
+}
+html::-webkit-scrollbar-thumb{
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+html::-webkit-scrollbar-track{
+  background-color:  #5f9ea0;
+  border: 10px solid #41494C;
+  border-top: 10px solid #14191D;
+  border-bottom: 10px solid #1D262D;
+  border-left: 10px solid #647272;
+  }
+  html::-webkit-scrollbar-button{
+    background-color: #0F1111;
+    height: 20px;
+    width: 20px;
+  }
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+    border: 10px solid #E2DD94;
+  border-top: 10px solid #990316;
+  border-right: 10px solid #160405;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #3CAE36;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #D50202;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #284B15;
+  color: #121212;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px;
+  outline: none;
+  background-color: #E5F7C3;
+  color: #00583C;
+     border: 10px solid #41494C;
+  border-top: 10px solid #14191D;
+  border-bottom: 10px solid #1D262D;
+  border-left: 10px solid #647272;
+  padding: 14px 16px;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #75D923;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 10px solid #724A2A;
+  border-top: 10px solid #AFAFAF;
+  border-left: 10px solid #AF2626;
+  border-bottom: 10px solid #090F1E;
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #9C0408;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+    border: 5px solid #01030F;
+  border-top: 5px solid #146FA4;
+  border-bottom: 5px solid #090506;
+}
+
+/* Add a background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #177953;
+  color: #10101A;
+}
+
+/* Add a background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #427552;
+  color: #AAB2BA;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.dark-mode p{
+background-color: black;
+color: #BC0F17
+}
+.dark-mode h1{
+  color: #B62729;
+}
+.dark-mode h1:hover{
+  color: #FF0000;
+}
+.dark-mode img{
+  border: 10px solid #F1E290;
+  border-top: 10px solid #F677C1;
+  border-bottom: 10px solid #9B3284;
+  border-left: 10px solid #690074;
+}
+.dark-mode img:hover{
+  border: 10px solid #FF00E4;
+  border-top: 10px solid #ED50F1;
+  border-bottom: 10px solid #FDB9FC;
+}
+.dark-mode .dropbtn{
+background-color: #BD92D6;
+color: #23024F; 
+ padding: 16px;
+  font-size: 16px;
+  border: 10px solid #AE3218;
+  border-top: 10px solid #A78220;
+  border-bottom: 10px solid #55586B;
+  cursor: pointer;
+}
+.dark-mode .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1D5540;
+  color: #446A1B;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border: 10px solid #E7BE0A;
+  border-top: 10px solid #061442;
+  border-bottom: 10px solid #AF8700;
+}
+.dark-mode .dropdown-content a {
+  color: #7F8E5C;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border: 10px solid #867760;
+  border-top: 10px solid #58664C;
+  border-bottom: 10px solid #3A3C37;
+  border-left: 10px solid #63211C;
+}
+
+.dark-mode .dropdown-content a:hover {
+  background-color: #3B88DC;
+  color: #5F6266;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #DAE9EA;
+}
+.dark-mode .topnav{
+  background-color: #5C33F6;
+}
+
+/*computer desktop layout*/
+@media screen and (min-width: 601px) {
+  div.example {
+    font-size: 60px;
+  }
+}
+/*mobile layout */
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 30px;
+  }
+  body{
+    background-color: #E00000;;
+  }
+  p{
+    background-color: #F8EEF6;
+    color: #FEA52A;
+  }
+  h1{
+    color: #E39415;
+  }
+  img{
+    border: 10px solid #F9D371;
+    border-top: 10px solid #F47340;
+    border-bottom: 10px solid #EF2F88;
+    border-left: 10px solid #8843F2;
+  }
+  .dark-mode{
+    background-color: black;
+  }
+  .dark-mode h1{
+    color: #3CAE36;
+  }
+  .dark-mode p{
+    background-color: black;
+    color: #D50202;
+    border-bottom: 10px solid #7F506B;
+  }
+  .dark-mode .topnav{
+    background-color: #FF8E00;
+  }
+  .topnav{
+    background-color: #284B15;
+  }
+  .topnav a{
+    background-color: #042077;
+    color: #AB0303;
+  }
+  .dropdown .dropbtn {
+    background-color: #FCFCCF;
+    color: #EFCB26;
+    border-top: 5px solid #B983FF;
+    border-bottom: 5px solid #94B3FD;
+    border: 5px solid #94DAFF;
+    border-left: 5px solid #99FEFF;
+  }
+  .dropdown-content{
+    border: 5px solid #49FF00;
+    border-top: 5px solid #FBFF00;
+    border-bottom: 5px solid #FF9300;
+    border-left: 5px solid #FF0000;
+  }
+.dropdown-content a{
+  border: 5px solid #FF0075;
+  border-top: 5px solid #172774;
+  border-bottom: 5px solid #77D970;
+  border-left: 5px solid #EEEEEE;
+}
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #F6CE4B;
+  color: #DE413C;
+}
+.dark-mode .dropbtn{
+    background-color: #E21912;
+    color: #145B1D;
+    border: 5px solid #0CECDD;
+    border-top: 5px solid #FFF338;
+    border-bottom: 5px solid #FF67E7;
+    border-left: 5px solid #C400FF;
+  }
+  .dark-mode .dropdown-content {
+    background-color: #073147;
+    border: 5px solid #F7FD04;
+    border-top: 5px solid #F9B208;
+    border-left: 5px solid #F98404;
+    border-bottom: 5px solid #FC5404;
+  }
+  .dark-mode .dropdown-content a {
+    color: #6D7A82;
+    border: 5px solid #9EDE73;
+    border-top: 5px solid #F7EA00;
+    border-bottom: 5px solid #E48900;
+    border-left: 5px solid #BE0000;
+  }
+  .dark-mode .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #BC4737;
+    color: #979E8D;
+  }
+}
